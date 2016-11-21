@@ -231,6 +231,51 @@
 
 
   
+    <article id="post-如何让mac读取-txt" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/10/08/如何让mac读取-txt/">如何让mac读取.txt</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><strong>这个问题就是一个编码转换的问题。linux和mac都为我们提供了一个强大的命令行命令：<br>iconv<br>可以用来转换大多数的编码<br>于是用一个简单的命令行命令就解决了该问题。<br>操作如下:<br>打开terminal，在其中输入：<br>cd [文件所在目录]<br>按回车，再输入：<br>iconv -c -f GB2312 -t UTF-8 [你要看的文件] &gt;&gt; [新文件的名称]<br>然后按下回车，就可以了。<br>例如我下载了电子书 凡人修仙转.txt 那么我就可以用下面的命令:<br>cd ~/Downloads/ibook/<br>iconv -c -f GB2312 -t UTF-8 凡人修仙转.txt &gt;&gt; 凡人修仙转2.txt<br>这样，凡人修仙传2.txt 这个文件就可以在Mac中打开了。<br>需要注意的是，在上述命令中，GB2312指的是原文件的编码，UTF-8是要转换的目的文件的编码。GB2312这个是常用的中文编码，其他还有gbk等等编码，如果这个命令不行可以试试其他编码。UTF-8是mac能够识别的编码。</strong></p>
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      <a href="/2016/10/08/如何让mac读取-txt/" class="archive-article-date">
+  	<time datetime="2016-10-08T08:29:51.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-10-08</time>
+</a>
+      
+      
+
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+
+
+  
     <article id="post-test-page" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-inner">
     
